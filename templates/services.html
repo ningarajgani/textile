@@ -1,0 +1,565 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from fabric.websitelayout.net/services.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Feb 2025 05:48:40 GMT -->
+<head>
+
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="Chitrakoot Web">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="Fashion & Textile Manufacturing Template">
+    <meta name="description" content="Fabric - Fashion & Textile Manufacturing Template">
+
+    <!-- title  -->
+    <title>Fabric - Fashion & Textile Manufacturing Template</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logos/favicon.png">
+    <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-touch-icon-114x114.png">
+
+    <!-- plugins -->
+    <link rel="stylesheet" href="{% static 'css/plugins.css' %}">
+
+    <!-- search css -->
+    <link rel="stylesheet" href="{% static 'search/search.css' %}">
+
+    <!-- quform css -->
+    <link rel="stylesheet" href="{% static 'quform/css/base.css' %}">
+
+    <!-- theme core css -->
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- PAGE LOADING
+    ================================================== -->
+    <div id="preloader"></div>
+
+    <!-- MAIN WRAPPER
+    ================================================== -->
+    <div class="main-wrapper">
+
+        <!-- HEADER
+        ================================================== -->
+        <header class="header-style1 menu_area-light">
+        
+            <div class="navbar-default border-bottom border-color-light-white">
+        
+                <!-- start top search -->
+                <div class="top-search bg-primary">
+                    <div class="container-fluid px-lg-1-6 px-xl-2-5 px-xxl-2-9">
+                        <form class="search-form" action="/search/" method="GET" accept-charset="utf-8">
+                            <div class="input-group">
+                                <span class="input-group-addon cursor-pointer">
+                                    <button class="search-form_submit fas fa-search text-white" type="submit"></button>
+                                </span>
+                                <input type="text" class="search-form_input form-control" name="s" autocomplete="off" placeholder="Type & hit enter...">
+                                <span class="input-group-addon close-search mt-1"><i class="fas fa-times"></i></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- end top search -->
+        
+                <div class="container-fluid px-lg-1-6 px-xl-2-5 px-xxl-2-9">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-12">
+                            <div class="menu_area alt-font">
+                                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                                    <div class="navbar-header navbar-header-custom">
+                                        <!-- start logo -->
+                                        <a href="{% url 'home' %}" class="navbar-brand">
+                                            <img id="logo" src="{% static 'img/logos/logo-inner.png' %}" alt="logo">
+                                        </a>
+                                        <!-- end logo -->
+                                    </div>
+                                    <div class="navbar-toggler bg-primary"></div>
+        
+                                    <!-- start menu area -->
+                                    <ul class="navbar-nav ms-auto" id="nav" style="display: none;">
+                                        <li><a href="{% url 'home' %}">Home</a></li>
+                                        
+                                        <li>
+                                            <a href="#!">Pages</a>
+                                            <ul>
+                                                <li><a href="{% url 'about' %}">About Us</a></li>
+                                                <li><a href="{% url 'services' %}">Our Services</a></li>
+                                                <li><a href="{% url 'faq' %}">FAQ's</a></li>
+                                                <li>
+                                                    <a href="#!">Our Team</a>
+                                                    <ul>
+                                                        <li><a href="{% url 'team' %}">Our Team</a></li>
+                                                        <li><a href="{% url 'team_details' %}">Team Details</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="{% url 'pricing' %}">Pricing Plans</a></li>
+                                                <li><a href="{% url 'privacy_policy' %}">Privacy Policy</a></li>
+                                                <li><a href="{% url 'page_404' %}">404 Page</a></li>
+                                                <li><a href="{% url 'coming_soon' %}">Coming Soon</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="#!">Service</a>
+                                            <ul>
+                                                <li><a href="{% url 'fabric_dyeing' %}">Fabric Dyeing</a></li>
+                                                <li><a href="{% url 'stich_fabric' %}">Stich Fabric</a></li>
+                                                <li><a href="{% url 'synthetics_wool' %}">Synthetics Wool</a></li>
+                                                <li><a href="{% url 'satin_weaving' %}">Satin Weaving</a></li>
+                                                <li><a href="{% url 'cotton_velvet' %}">Cotton Velvet</a></li>
+                                                <li><a href="{% url 'digital_printing' %}">Digital Printing</a></li>
+                                                <li><a href="{% url 'gis_and_planning' %}">GIS & Planning</a></li>
+                                                <li><a href="{% url 'inter_design' %}" class="mb-0">Inter Design</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="{% url 'portfolio' %}">Portfolio</a>
+                                            <ul>
+                                                
+                                                <li><a href="{% url 'portfolio_details' %}">Portfolio Details</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="#!">Blog</a>
+                                            <ul>
+                                                <li><a href="{% url 'blog_grid' %}">All Blogs</a>
+                                                    
+                                                </li>
+                                                <li><a href="{% url 'blog_details' %}">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                                    </ul>
+                                    <!-- end menu area -->
+        
+                                    <!-- start attribute navigation -->
+                                    <div class="attr-nav align-items-xl-center ms-xl-auto main-font">
+                                        <ul>
+                                            <li class="search"><a href="#!"><i class="fas fa-search"></i></a></li>
+                                            <li class="d-none d-xl-inline-block">
+                                                <a href="{% url 'contact' %}" class="btn-style1 white-hover medium"><span>Free Quote</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- end attribute navigation -->
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- PAGE TITLE
+        ================================================== -->
+        <section class="page-title-section top-position1 bg-img cover-background secondary-overlay" data-overlay-dark="7" data-background="img/banner/page-title.jpg">
+            <div class="container">
+                <div class="page-title">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="display-4">Our Services</h1>
+                        </div>
+                        <div class="col-md-12">
+                            <ul class="ps-0">
+                                <li><a href="index-2.html" class="text-white">Home</a></li>
+                                <li><a href="#!" class="text-white">Our Services</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES
+        ================================================== -->
+        <section class="bg-light">
+            <div class="container">
+                <div class="section-title mb-1-9 mb-md-6 text-center wow fadeIn" data-wow-delay="100ms">
+                    <span class="sm-title">Our Services</span>
+                    <h2 class="display-5 font-weight-800 mb-0">We Provide Best Services</h2>
+                </div>
+                <div class="row mt-n1-9">
+                    <div class="col-md-6 col-xl-3 mt-1-9 wow fadeIn" data-wow-delay="100ms">
+                        <div class="card card-style04">
+                            <div class="card-body p-1-9 p-sm-2-6 pt-2-9 pt-sm-6 position-relative z-index-9">
+                                <div class="position-relative">
+                                    <img src="{% static 'img/icons/icon-04.png' %}" class="card-icon w-60px" alt="...">
+                                    <div class="icon-circle"></div>
+                                </div>
+                                <h3 class="h4 mb-3"><a href="{% url 'fabric_dyeing' %}">Fabric Dyeing</a></h3>
+                                <p class="mb-4">The material business is a significant worldwide Innovation with range occurring.</p>
+                                <a href="{% url 'fabric_dyeing' %}" class="display-30 font-weight-600">Read More <i class="ti-arrow-right align-middle display-31"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 mt-1-9 wow fadeIn" data-wow-delay="100ms">
+                        <div class="card card-style04">
+                            <div class="card-body p-1-9 p-sm-2-6 pt-2-9 pt-sm-6 position-relative z-index-9">
+                                <div class="position-relative">
+                                    <img src="{% static 'img/icons/icon-05.png' %}" class="card-icon w-60px" alt="...">
+                                    <div class="icon-circle"></div>
+                                </div>
+                                <h3 class="h4 mb-3"><a href="{% url 'stich_fabric' %}">Stich Fabric</a></h3>
+                                <p class="mb-4">The material business is a significant worldwide Innovation with range occurring.</p>
+                                <a href="{% url 'stich_fabric' %}" class="display-30 font-weight-600">Read More <i class="ti-arrow-right align-middle display-31"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 mt-1-9 wow fadeIn" data-wow-delay="100ms">
+                        <div class="card card-style04">
+                            <div class="card-body p-1-9 p-sm-2-6 pt-2-9 pt-sm-6 position-relative z-index-9">
+                                <div class="position-relative">
+                                    <img src="{% static 'img/icons/icon-06.png' %}" class="card-icon w-60px" alt="...">
+                                    <div class="icon-circle"></div>
+                                </div>
+                                <h3 class="h4 mb-3"><a href="{% url 'synthetics_wool' %}">Synthetics Wool</a></h3>
+                                <p class="mb-4">The material business is a significant worldwide Innovation with range occurring.</p>
+                                <a href="{% url 'synthetics_wool' %}" class="display-30 font-weight-600">Read More <i class="ti-arrow-right align-middle display-31"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 mt-1-9 wow fadeIn" data-wow-delay="100ms">
+                        <div class="card card-style04">
+                            <div class="card-body p-1-9 p-sm-2-6 pt-2-9 pt-sm-6 position-relative z-index-9">
+                                <div class="position-relative">
+                                    <img src="{% static 'img/icons/icon-07.png' %}" class="card-icon w-60px" alt="...">
+                                    <div class="icon-circle"></div>
+                                </div>
+                                <h3 class="h4 mb-3"><a href="{% url 'cotton_velvet' %}">Cotton Velvet</a></h3>
+                                <p class="mb-4">The material business is a significant worldwide Innovation with range occurring.</p>
+                                <a href="{% url 'cotton_velvet' %}" class="display-30 font-weight-600">Read More <i class="ti-arrow-right align-middle display-31"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 mt-1-9 wow fadeIn" data-wow-delay="100ms">
+                        <div class="card card-style04">
+                            <div class="card-body p-1-9 p-sm-2-6 pt-2-9 pt-sm-6 position-relative z-index-9">
+                                <div class="position-relative">
+                                    <img src="{% static 'img/icons/icon-28.png' %}" class="card-icon w-60px" alt="...">
+                                    <div class="icon-circle"></div>
+                                </div>
+                                <h3 class="h4 mb-3"><a href="{% url 'satin_weaving' %}">Satin Weaving</a></h3>
+                                <p class="mb-4">The material business is a significant worldwide Innovation with range occurring.</p>
+                                <a href="{% url 'satin_weaving' %}" class="border-bottom display-30 font-weight-600">Read More <i class="ti-arrow-right align-middle display-31"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 mt-1-9 wow fadeIn" data-wow-delay="100ms">
+                        <div class="card card-style04">
+                            <div class="card-body p-1-9 p-sm-2-6 pt-2-9 pt-sm-6 position-relative z-index-9">
+                                <div class="position-relative">
+                                    <img src="{% static 'img/icons/icon-29.png' %}" class="card-icon w-60px" alt="...">
+                                    <div class="icon-circle"></div>
+                                </div>
+                                <h3 class="h4 mb-3"><a href="{% url 'digital_printing' %}">Digital Printing</a></h3>
+                                <p class="mb-4">The material business is a significant worldwide Innovation with range occurring.</p>
+                                <a href="{% url 'digital_printing' %}" class="border-bottom display-30 font-weight-600">Read More <i class="ti-arrow-right align-middle display-31"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 mt-1-9 wow fadeIn" data-wow-delay="100ms">
+                        <div class="card card-style04">
+                            <div class="card-body p-1-9 p-sm-2-6 pt-2-9 pt-sm-6 position-relative z-index-9">
+                                <div class="position-relative">
+                                    <img src="{% static 'img/icons/icon-30.png' %}" class="card-icon w-60px" alt="...">
+                                    <div class="icon-circle"></div>
+                                </div>
+                                <h3 class="h4 mb-3"><a href="{% url 'gis_and_planning' %}">GIS & Planning</a></h3>
+                                <p class="mb-4">The material business is a significant worldwide Innovation with range occurring.</p>
+                                <a href="{% url 'gis_and_planning' %}" class="border-bottom display-30 font-weight-600">Read More <i class="ti-arrow-right align-middle display-31"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 mt-1-9 wow fadeIn" data-wow-delay="100ms">
+                        <div class="card card-style04">
+                            <div class="card-body p-1-9 p-sm-2-6 pt-2-9 pt-sm-6 position-relative z-index-9">
+                                <div class="position-relative">
+                                    <img src="{% static 'img/icons/icon-31.png' %}" class="card-icon w-60px" alt="...">
+                                    <div class="icon-circle"></div>
+                                </div>
+                                <h3 class="h4 mb-3"><a href="{% url 'inter_design' %}">Inter Design</a></h3>
+                                <p class="mb-4">The material business is a significant worldwide Innovation with range occurring.</p>
+                                <a href="{% url 'inter_design' %}" class="border-bottom display-30 font-weight-600">Read More <i class="ti-arrow-right align-middle display-31"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- CALL TO ACTION 
+        ================================================== -->
+        <section class="bg-img cover-background secondary-overlay" data-overlay-dark="8" data-background="img/bg/bg-02.jpg">
+            <div class="container">
+                <div class="row justify-content-center wow fadeInUp" data-wow-delay="100ms">
+                    <div class="col-lg-9 col-xl-8 col-xxl-7">
+                        <div class="text-center">
+                            <div class="extra-icon-circle">
+                                <img src="{% static 'img/icons/icon-23.png' %}" class="w-50px" alt="...">
+                            </div>
+                            <h2 class="text-white display-18 display-sm-15 display-md-10 display-lg-6 mb-0">The Highest Quality Work That Meets Your Expectation</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-primary p-14 d-inline-block rounded-circle position-absolute left-n10 left-xl-n5 bottom-n15 ani-top-bottom z-index-1 d-none d-lg-block"></div>
+            <img src="{% static 'img/content/shape-02.png' %}" class="position-absolute right-5 top-10 z-index-3 ani-left-right d-none d-md-block" alt="...">
+        </section>
+
+        <!-- TESTIMONIAL
+        ================================================== -->
+        <section>
+            <div class="container position-relative z-index-1">
+                <div class="section-title mb-1-9 mb-md-6 text-center">
+                    <span class="sm-title">Testimonials</span>
+                    <h2 class="display-5 font-weight-800 mb-0">Love Your Customers</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 text-center">
+                        <div class="testimonial-style2 owl-carousel owl-theme" data-slider-id="1">
+                            <div>
+                                <i class="ti-quote-left display-10 text-primary mb-4 d-block"></i>
+                                <p class="mb-1-9 display-28 display-md-26 display-lg-24">I love fabric! this is an amazing service and it has saved me and my small business so much time. I plan to use it for a long time to come.</p>
+                                <h5 class="mb-0">Mhret Afwerki</h5>
+                                <span class="small">Fashion Designer</span>
+                            </div>
+                            <div>
+                                <i class="ti-quote-left display-10 text-primary mb-3 d-block"></i>
+                                <p class="mb-1-9 display-28 display-md-26 display-lg-24">Fabric has helped my team and i stay on the same page. Previously, we were all over the board. Using fabric has definitely saved us time and money.</p>
+                                <h5 class="mb-0">Abrha Medhane</h5>
+                                <span class="small">Photographer</span>
+                            </div>
+                            <div>
+                                <i class="ti-quote-left display-10 text-primary mb-3 d-block"></i>
+                                <p class="mb-1-9 display-28 display-md-26 display-lg-24">I have been using fabric for over a year now and i love it! i can't imagine life without it. It's so easy to use, and the customer service is great.</p>
+                                <h5 class="mb-0">Lemlem Saare</h5>
+                                <span class="small">Customer</span>
+                            </div>
+                        </div>
+                        <div class="owl-thumbs text-center mt-2-3" data-slider-id="1">
+                            <button class="owl-thumb-item rounded-circle w-60px me-2"><img src="{% static 'img/avatars/avatar-08.jpg' %}" class="rounded-circle" alt="..."></button>
+                            <button class="owl-thumb-item w-60px rounded-circle me-2"><img src="{% static 'img/avatars/avatar-09.jpg' %}" class="rounded-circle" alt="..."></button>
+                            <button class="owl-thumb-item w-60px rounded-circle"><img src="{% static 'img/avatars/avatar-10.jpg' %}" class="rounded-circle" alt="..."></button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="{% static 'img/avatars/avatar-05.png' %}" class="position-absolute bottom-15 left d-none d-lg-block rounded-circle wow fadeIn" data-wow-delay="200ms" alt="...">
+                    <img src="{% static 'img/avatars/avatar-06.png' %}" class="position-absolute top-20 right d-none d-lg-block rounded-circle wow fadeIn" data-wow-delay="300ms" alt="...">
+                    <img src="{% static 'img/avatars/avatar-07.png' %}" class="position-absolute left-15 top-10 d-none d-lg-block rounded-circle wow fadeIn" data-wow-delay="400ms" alt="...">
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER
+        ================================================== -->
+        <footer class="bg-secondary footer-style2 pt-10">
+            <div class="container py-0">
+                <div class="row mt-n2-6 mb-6">
+                    <div class="col-md-6 col-xl-3 mt-2-6">
+                        <div class="pe-md-1-9 pe-xl-0">
+                            <div class="mb-1-6 mb-lg-1-9">
+                                <a href="{% url 'home' %}" class="footer-logo">
+                                    <img src="{% static 'img/logos/footer-light-logo.png' %}" alt="...">
+                                </a>
+                            </div>
+                            <p class="text-white mb-1-6 mb-lg-1-9">We are running wellness habitats in the a large
+                                portion of the urban communities in USA. </p>
+                            <ul class="footer-social-style01">
+                                <li>
+                                    <a href="#!"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#!"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#!"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#!"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 mt-2-6">
+                        <div class="px-xl-1-6">
+                            <div class="section-title mb-1-6">
+                                <span class="sm-title">Get in Touch</span>
+                            </div>
+                            <ul class="address-list">
+                                <li>
+                                    <i class="fas fa-map-marker-alt text-primary align-middle me-2"></i> 66 Guild
+                                    Street, North Town.
+                                </li>
+                                <li>
+                                    <i class="far fa-envelope text-primary align-middle me-2"></i> info@example.com
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone text-primary align-middle me-2"></i> +44) 123 456 789
+                                </li>
+                                <li>
+                                    <i class="ti-calendar text-primary align-middle me-2"></i> Mon - Sat: 9am - 5pm
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 mt-2-6">
+                        <div class="ps-xl-1-6 pe-md-2-9 pe-xl-1-9">
+                            <div class="section-title mb-1-6">
+                                <span class="sm-title">Our Services</span>
+                            </div>
+                            <ul class="footer-list-style2">
+                                <li><a href="{% url 'fabric_dyeing' %}">Fabric Dyeing</a></li>
+                                <li><a href="{% url 'stich_fabric' %}">Stich Fabric</a></li>
+                                <li><a href="{% url 'synthetics_wool' %}">Synthetics Wool</a></li>
+                                <li><a href="{% url 'cotton_velvet' %}">Cotton Velvet</a></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 mt-2-6">
+                        <div>
+                            <div class="section-title mb-1-6">
+                                <span class="sm-title">Gallery</span>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-4">
+                                    <a href="#!">
+                                        <div class="gallery-img position-relative">
+                                            <img src="{% static 'img/content/insta-01.jpg' %}" alt="..."
+                                                class="border-radius-10">
+                                            <div class="icon">
+                                                <i class="ti-instagram"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#!">
+                                        <div class="gallery-img position-relative">
+                                            <img src="{% static 'img/content/insta-02.jpg' %}" alt="..."
+                                                class="border-radius-10">
+                                            <div class="icon">
+                                                <i class="ti-instagram"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#!">
+                                        <div class="gallery-img position-relative">
+                                            <img src="{% static 'img/content/insta-03.jpg' %}" alt="..."
+                                                class="border-radius-10">
+                                            <div class="icon">
+                                                <i class="ti-instagram"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#!">
+                                        <div class="gallery-img position-relative">
+                                            <img src="{% static 'img/content/insta-04.jpg' %}" alt="..."
+                                                class="border-radius-10">
+                                            <div class="icon">
+                                                <i class="ti-instagram"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#!">
+                                        <div class="gallery-img position-relative">
+                                            <img src="{% static 'img/content/insta-05.jpg' %}" alt="..."
+                                                class="border-radius-10">
+                                            <div class="icon">
+                                                <i class="ti-instagram"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#!">
+                                        <div class="gallery-img position-relative">
+                                            <img src="{% static 'img/content/insta-06.jpg' %}" alt="..."
+                                                class="border-radius-10">
+                                            <div class="icon">
+                                                <i class="ti-instagram"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bar bg-secondary borders-top border-color-light-white">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <p class="d-inline-block text-white mb-0">&copy; <span class="current-year"></span>
+                                    All rights reserved | Designed with ❤️ by
+                                    <a href="#!" class="text-primary text-white-hover">Ningaraj </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- BUY TEMPLATE
+    ================================================== -->
+    <div class="buy-theme alt-font d-none d-lg-inline-block"><a href="https://wrapbootstrap.com/theme/fabric-fashion-textile-manufacturing-template-WB08TGHX6" target="_blank"><i class="fas fa-cart-plus"></i><span>Buy Template</span></a></div>
+
+    <div class="all-demo alt-font d-none d-lg-inline-block"><a href="https://www.chitrakootweb.com/contact.html" target="_blank"><i class="far fa-envelope"></i><span>Quick Question?</span></a></div>
+
+    <!-- start scroll to top -->
+    <a href="#!" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
+    <!-- end scroll to top -->
+
+    <!-- jQuery -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+
+    <!-- popper js -->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+
+    <!-- bootstrap -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <!-- jquery -->
+    <script src="{% static 'js/core.min.js' %}"></script>
+
+    <!-- Search -->
+    <script src="{% static 'search/search.js' %}"></script>
+
+    <!-- custom scripts -->
+    <script src="{% static 'js/main.js' %}"></script>
+
+    <!-- form plugins js -->
+    <script src="{% static 'quform/js/plugins.js' %}"></script>
+
+    <!-- form scripts js -->
+    <script src="{% static 'quform/js/scripts.js' %}"></script>
+
+    <!-- all js include end -->
+
+</body>
+
+
+<!-- Mirrored from fabric.websitelayout.net/services.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Feb 2025 05:48:41 GMT -->
+</html>
